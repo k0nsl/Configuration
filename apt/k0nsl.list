@@ -1,0 +1,23 @@
+###############################
+#                             #
+#                             #
+#                             #
+#   _     ___            _    #
+#  | | __/ _ \ _ __  ___| |   #
+#  | |/ / | | | '_ \/ __| |   #
+#  |   <| |_| | | | \__ \ |   #
+#  |_|\_\\___/|_| |_|___/_|   #
+#                             #
+#      Debian mirrror         #
+#                             #
+#                             #
+###############################
+
+deb http://debian.mirror.k0nsl.org/debian/ jessie main
+deb-src http://debian.mirror.k0nsl.org/debian/ jessie main
+deb http://debian-security.mirror.k0nsl.org/debian-security/ jessie/updates main contrib
+deb-src http://debian-security.mirror.k0nsl.org/debian-security/ jessie/updates main contrib
+deb http://debian.mirror.k0nsl.org/debian/ jessie-updates main
+deb-src http://debian.mirror.k0nsl.org/debian/ jessie-updates main
+deb http://debian.mirror.k0nsl.org/debian jessie-proposed-updates main contrib non-free
+deb-src http://debian.mirror.k0nsl.org/debian jessie-proposed-updates main contrib non-free
