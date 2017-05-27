@@ -1,2 +1,2 @@
 # Configuration
-Various configurations for projects and personal systems.
+Various configuration files for projects and personal systems.
