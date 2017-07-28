@@ -1,0 +1,407 @@
+# The following lines are intended to delete messages that report a virus incident.
+# As virus incidents today often involve forged email addresses, so that the notification
+# is sent to somebody that was not involved at all. Thus it is best to just discard the message.
+
+# This file is addressing the headers of a message. Use it for the postfix mailer, eg. by 
+# placing it in a file /etc/postfix/header_checks and add the following line to /etc/postfix/main.cf :
+# header_checks = regexp:/etc/postfix/header_checks
+# (without the leading #-comment character) ; then restart postfix with: service postfix restart
+
+# UPDATES AND CORRECTIONS WELCOME!
+
+# Use at your own risk. The lines below may silently delete valid e-mails.
+# Copyright Keld Simonsen, keld@dkuug.dk 2004-02-10.
+# last updated by k0nsl (i.am@k0nsl.org) at 1499284522 (epoch / unix timestamp)
+# Released under the GPL license, version 2 or any later version.
+
+/^Subject: virus alert/ DISCARD Virus detection mail
+/^Subject: Virus infection notice/ DISCARD Virus detection mail
+/^Subject: Detecté Virus - Sujet :/ DISCARD Virus detection mail
+/^Subject: Incidencia de virus/ DISCARD Virus detection mail
+/^Subject: Virus funnet i sendt melding "/ DISCARD Virus detection mail
+/^Subject: A virus was detected/ DISCARD Virus detection mail
+/^Subject: Alerta: Suspeita de virus no E-mail/ DISCARD Virus detection mail
+/^Subject: Virus found\/Virus gefunden/ DISCARD Virus detection mail
+/^Subject: something for you \[Notice: Your mail has been blocked due to a violation/ DISCARD Virus detection mail
+/^Subject: Symantec AV\/F detected a virus in a document you authored/ DISCARD Virus detection mail
+/^Subject: Symantec AntiVirus\/Filtering for Domino detected a virus in a document you/ DISCARD Virus detection mail
+/^Subject: Skynet Mail Protection scan results/ DISCARD Virus detection mail
+/^Subject: Aviso: Detectado vírus de e-mail/ DISCARD Virus detection mail
+/^Subject: NOTIFICATION: Virus stopped/ DISCARD Virus detection mail
+/^Subject: Virusfertozesi ertesites/ DISCARD Virus detection mail
+/^Subject: WARNING: YOU MAY HAVE A VIRUS/ DISCARD Virus detection mail
+/^Subject: Virus found in message \(quarantined\)/ DISCARD Virus detection mail
+/^Subject: Unsolicited commercial email rejected/ DISCARD Virus detection mail
+/^Subject: Invalid content in mail message (message rejected)/ DISCARD Virus detection mail
+/^Subject: virus trovato in un messaggio inviato/ DISCARD Virus detection mail
+/^Subject: WIRUS w Twoim mailu !/ DISCARD Virus detection mail
+/^Subject: .* VIRUS EN SU CORREO/ DISCARD Virus detection mail
+/^Subject: VIRUS IN YOUR MAIL TO / DISCARD Virus detection mail
+/^Subject: .* To Sender virus found and action taken/ DISCARD Virus detection mail
+/^Subject: Message Stopped ---- Virus Detected ----/ DISCARD Virus detection mail
+/^Subject: Wichtiger Hinweis: Virus entdeckt/ DISCARD Virus detection mail
+/^Subject: File was infected with a virus/ DISCARD Virus detection mail
+/^Subject: Devolto polo filtro antivirus por:  warning/ DISCARD Virus detection mail
+/^Subject: Your email message was blocked because: Block email in with Dangerous file Attachments/ DISCARD Virus detection mail
+/^Subject: Aviso: Detectado vírus no e-mail/ DISCARD Virus detection mail
+/^Subject: ! PELIGRO ! - Virus encontrado en el correo \ ! WARNING ! - Virus found in email/ DISCARD Virus detection mail
+/^Subject: Suspicious Attachment/ DISCARD Virus detection mail
+/^Subject: tipo de arquivo anexo proibido encontrado em mensagem enviada/ DISCARD Virus detection mail
+/^Subject: In einer E-Mail wurde ein Virus gefunden \/ A virus was detected in/ DISCARD Virus detection mail
+/^Subject: problem funnið í sendum boðum/ DISCARD Virus detection mail
+/^Subject: VIRUS\/PROBLEM IN IHRER MAIL/ DISCARD Virus detection mail
+/^Subject: Tipo de arquivo anexo nao permitido! encontrado em mensagem enviada / DISCARD Virus detection mail
+/^Subject: returned due to virus or too large or too many attachment/ DISCARD Virus detection mail
+/^Subject: VIRUS NO SEU E-MAIL PARA / DISCARD Virus detection mail
+/^Subject: Znaleziono wirusa w Twojej wiadomosci "/ DISCARD Virus detection mail
+/^Subject: Returned due to virus: / DISCARD Virus detection mail
+/^Subject: RAV AntiVirus scan results/ DISCARD Virus detection mail
+/^Subject: ALANET ANTIVIRUS ALERTA - VIRUS EM SEU EMAIL/ DISCARD Virus detection mail
+/^Subject: Virus v dokumente Vami odoslanom\./ DISCARD Virus detection mail
+/^Subject: virus in verschickter Nachricht gefunden / DISCARD Virus detection mail
+/^Subject: ALERTE - Vous avez envoye un mail avec virus/ DISCARD Virus detection mail
+/^Subject: ENCONTRADO VIRUS EM SEU EMAIL/ DISCARD Virus detection mail
+/^Subject: Virus v dokumente Vami odoslanom/ DISCARD Virus detection mail
+/^Subject: Norton AntiVirus detected a virus in a message you sent/ DISCARD Virus detection mail
+/^Subject: Email-ul Dvs contine un Virus  !/ DISCARD Virus detection mail
+/^Subject: \[Proxy+ notification\] Virus found in a message/ DISCARD Virus detection mail
+/^Subject: Vexira Antivirus \[your mail: / DISCARD Virus detection mail
+/^Subject: Virus Detectad/ DISCARD Virus detection mail
+/^Subject: Virus Check Alert \(/ DISCARD Virus detection mail
+/^Subject: Non remis : \*\*\*\*\* SPAM \*\*\*\*\*/ DISCARD Virus detection mail
+/^Subject: VIRUS RE:/ DISCARD Virus detection mail
+/^Subject: ON VIRUST KULDOTT!/ DISCARD Virus detection mail
+/^Subject: VIRUS EM EMAIL PARA VOCE / DISCARD Virus detection mail
+/^Subject: virus encontrado na mensagem enviada / DISCARD Virus detection mail
+/^Subject: Ochrona antywirusowa \(sender: / DISCARD Virus detection mail
+/^Subject: Returned mail: Possible Virus Infection/ DISCARD Virus detection mail
+/^Subject: Virus incident/ DISCARD Virus detection mail
+/^Subject: Virus figyelmeztetes \/ Virus warning\. \(To: / DISCARD Virus detection mail
+/^Subject: Undeliverable: An email for you contains VIRUSES/ DISCARD Virus detection mail
+/^Subject: Ecartis command results: -- Binary\/unsupported file stripped by Ecartis --/ DISCARD Virus detection mail
+/^Subject: Advarsel\! Din e-mail indeholder virus/ DISCARD Virus detection mail
+/^Subject: An email for you contains VIRUSES/ DISCARD Virus detection mail
+/^Subject: Your mail server sent us a virus/ DISCARD Virus detection mail
+/^Subject: Illegal attachment type found in sent message/ DISCARD Virus detection mail
+/^Subject: Nie dostarczono poczty e-mail/ DISCARD Virus detection mail
+/^Subject: Virus Infection Alert! / DISCARD Virus detection mail
+/^Subject: InterScan NT Alert/ DISCARD Virus detection mail
+/^Subject: SENDER! Virus found in message from you!/ DISCARD Virus detection mail
+/^Subject: Returned mail: Executable attachment blocked / DISCARD Virus detection mail
+/^Subject: BANNED FILENAME IN MAIL TO YOU / DISCARD Virus detection mail
+/^Subject: Message Delivery Failure - due to attachments/ DISCARD Virus detection mail
+/^Subject: WARNING! Virus detected/ DISCARD Virus detection mail
+/^Subject: Virusveszely! Virus warning!/ DISCARD Virus detection mail
+/^Subject: Virus Detected by Network Associates, Inc. Webshield SMTP / DISCARD Virus detection mail
+/^Subject: VIRUS NO SEU EMAIL !!!/ DISCARD Virus detection mail
+/^Subject: Warning Possible Virus Alert !!!/ DISCARD Virus detection mail
+/^Subject: WARNING: The message contains a virus!/ DISCARD Virus detection mail
+/^Subject: Norton AntiVirus detected and quarantined a virus in a message yo/ DISCARD Virus detection mail
+/^Subject: Possible Virus Found in E-Mail/ DISCARD Virus detection mail
+/^Subject: Aviso de correo.universia.net - Virus encontrado/ DISCARD Virus detection mail
+/^Subject: Trovato virus nel messaggio/ DISCARD Virus detection mail
+/^Subject: W Twojej wiadomosci znaleziono wirusa! / Virus found in your message!/ DISCARD Virus detection mail
+/^Subject:  Returned due to virus; was:/ DISCARD Virus detection mail
+/^Subject: \{Virus!\}/ DISCARD Virus detection mail
+/^Subject: \{Virus\?\}/ DISCARD Virus detection mail
+/^Subject: Znaleziono wirusa w Twojej wiadomosci/ DISCARD Virus detection mail
+/^Subject: ALERT: A virus was found on an e-mail sent by you/ DISCARD Virus detection mail
+/^Subject: WIRUS W TWOJEJ POCZCIE/ DISCARD Virus detection mail
+/^Subject: "Returned due to virus; was:"/ DISCARD Virus detection mail
+/^Subject: NAV detected a virus in a document you authored/ DISCARD Virus detection mail
+/^Subject: Anti-Virus detected a violation in a document you authored\./ DISCARD Virus detection mail
+/^Subject: .*-Danger : Virus Trouvé/ DISCARD Virus detection mail
+/^Subject: Virus found in your message Mail Transaction Failed/ DISCARD Virus detection mail
+/^Subject: Returned mail: Unacceptable content/ DISCARD Virus detection mail
+/^Subject: Filter scan result notification from gateway/ DISCARD Virus detection mail
+/^Subject: SENDER ! Virus found in message from you !/ DISCARD Virus detection mail
+/^Subject: Warning: message cannot be accepted, message rejected/ DISCARD Virus detection mail
+/^Subject: VIRUS in your message/ DISCARD Email reporting virus detected
+/^Subject: Binnenkomend virus gedetecteerd/ DISCARD Email reporting virus detected
+/^Subject: Binnenkomend bestandstype niet toegestaan/ DISCARD Email reporting virus detected
+/^Subject: Znaleziono WIRUSa w liscie od Ciebie !/ DISCARD Email reporting virus detected
+/^Subject: .* Mail refused because of attachment/ DISCARD Email reporting virus detected
+/^Subject: ATTENZIONE: Ricevuto VIRUS da / DISCARD Email reporting virus detected
+/^Subject: VIRUS NO SEU MAIL PARA / DISCARD Email reporting virus detected
+/^Subject: Upozornenie: E-mail virus zisteny/ DISCARD Email reporting virus detected
+/^Subject: You sent an email that had a virus in it/ DISCARD Email reporting virus detected
+/^Subject: VIRUS ENCONTRADO EN SU CORREO/ DISCARD Email reporting virus detected
+/^Subject: AVISO DE VIRUS \/ VIRUS WARNING/ DISCARD Email reporting virus detected
+/^Subject: Virus detected in: MAIL TRANSACTION FAILED/ DISCARD Virus detection mail
+/^Subject: Sender Note - Inbound Virus Quarantined/ DISCARD Virus detection mail
+/^Subject: !!! Achtung Virus !!!/ DISCARD Virus detection mail
+/^Subject: Quarantined Mail: attachment from / DISCARD Virus detection mail
+/^Subject: Attachment Blocking/ DISCARD Virus detection mail
+/^Subject: .* Attachment block message notification/ DISCARD Virus detection mail
+/^Subject: Your message was discarded / DISCARD Virus detection mail
+/^Subject: virus znaleziono w wyslanej wiadomosci / DISCARD Virus detection mail
+/^Subject: Virus détecté dans le message "/ DISCARD Virus detection mail
+/^Subject: In het door u gestuurde bericht is een virus aangetroffen!!/ DISCARD Virus detection mail
+/^Subject: Unallowed attachment in e-mail to/ DISCARD Virus detection mail
+/^Subject: Atención: Virus detectado en e-mail/ DISCARD Virus detection mail
+/^Subject: ALERT: You may have sent a Virus/ DISCARD Virus detection mail
+/^Subject: Serveur de messagerie - Virus détecté/ DISCARD Virus detection mail
+/^Subject: VIRUS POSLAN SA VASE ADRESE \/ VIRUS SENT FROM YOUR ADDRESS/ DISCARD Virus detection mail
+/^Subject: \*\*\*WARNING-Virus Detected\*\*\*/ DISCARD Virus detection mail
+/^Subject: Non delivery report: 5\.9\.5 \(Blocked attachment\)/ DISCARD Virus detection mail
+/^Subject: Virenchecker Information/ DISCARD Virus detection mail
+/^Subject: Warning: A possible virus has been detected in one of your messages\./ DISCARD Virus detection mail
+/^Subject: MailMarshal a detectado un Virus en su mensaje/ DISCARD Virus detection mail
+/^Subject: You sent potentially unsafe content: / DISCARD Virus detection mail
+/^Subject: Security Alert - ScanMail for Lotus Notes/ DISCARD Virus detection mail
+/^Subject: SAV detected a violation in a document you authored/ DISCARD Virus detection mail
+/^X-Mirapoint-Virus: VIRUSDELETED;/ DISCARD Email reporting virus detected
+/^Diagnostic-code: smtp;552 we don't accept email with executable content \(#5\.3\.4\)/ DISCARD Email reporting virus detected
+/^Subject: \[Magic OnLine\\] Suppression du Virus: / DISCARD Email reporting virus detected
+/^Subject: Tipo de archivo adjunto no permitido encontrado en el mensaje enviado/ DISCARD Virus detection mail
+/^Subject: W wiadomosci wyslanej przez Ciebie wykryto WIRUSA/ DISCARD Virus detection mail
+/^Subject: Symantec Mail Security detected a repairable\/quarantined virus based on a message you sent/ DISCARD Virus detection mail
+/^Subject: Symantec Mail Security detected that you sent a message containing an executable file\./ DISCARD Virus detection mail
+/^Subject: Symantec AVF detected an unrepairable virus in a message you sent/ DISCARD Virus detection mail
+/^Subject: Symantec Mail Security detected .* unrepairable virus.* in a message you sent/ DISCARD Virus detection mail
+/^Subject: Symantec AVF detected a repairable\/quarantined virus in a message you sent/ DISCARD Virus detection mail
+/^Subject: Virus Found in message "/ DISCARD Virus detection mail
+/^Subject: Warning - Virus detected in email/ DISCARD Virus detection mail
+/^Subject: virus found in sent message "/ DISCARD Virus detection mail
+/^Subject: Virus Quarantine Notification/ DISCARD Virus detection mail
+/^Subject: MIMEDefang Notification/ DISCARD Virus detection mail
+/^Subject: SAV ha rilevato un virus in un documento spedito da/ DISCARD Virus detection mail
+/^Subject: Virus or Forbidden File Type Warning/ DISCARD Virus detection mail
+/^Subject: MailMarshal has detected a Virus in your message/ DISCARD Virus detection mail
+/^Subject: \[Virus detected\]/ DISCARD Virus detection mail
+/^Subject: InterScan MSS has deleted a message/ DISCARD Virus detection mail
+/^Subject: \[ Alerte Virus \] Vous avez envoyé un virus !/ DISCARD Virus detection mail
+/^Subject: You sent an e-mail with a virus, vet couldn't remove the virus\./ DISCARD Virus detection mail
+/^Subject: your e-mail was infected by a virus/ DISCARD Virus detection mail
+/^Subject: BitDefender found an infected object/ DISCARD Virus detection mail
+/^Subject: Illegal attachment type trouve dans le message envoye / DISCARD Virus detection mail
+/^Subject: Inflex scan report / DISCARD Virus detection mail
+/^Subject: AntiVir ALERT \[your mail: "/ DISCARD Virus detection mail
+/^Subject: InoculateIT detected the .* virus in Mailbox / DISCARD Virus detection mail
+/^Subject: Antigen Notification:Antigen found FILE FILTER/ DISCARD Virus detection mail
+/^Subject: \[Magic OnLine\] Suppression du Virus:/ DISCARD Virus detection mail
+/^Subject: Anexos Removidos/ DISCARD Virus detection mail
+/^Subject: \[MailServer Notification\]To Sender file blocking settings matched and action taken\./ DISCARD Virus detection mail
+/^Subject: .* File Type Attachment Discarded/ DISCARD Virus detection mail
+/^Subject: Returned due to virus; was:/ DISCARD Virus detection mail
+/^Subject: Antigen found FILE FILTER=/ DISCARD Virus detection mail
+/^Subject: Wykryto wirusa w Twoim mailu!: / DISCARD Virus detection mail
+/^Subject: Failed mail: message contains virus infected file/ DISCARD Virus detection mail
+/^Subject: Warning: antivirus system repor/ DISCARD Virus detection mail
+/^Subject: ATENCION. Usted ha enviado un mail posiblemente infectado/ DISCARD Virus detection mail
+/^Subject: MDaemon Warning - Virus Found/ DISCARD Virus detection mail
+/^Subject: MDaemon Notification -- Attachment Removed/ DISCARD Virus detection mail
+/^Subject: Disallowed attachment type / DISCARD Virus detection mail
+/^Subject: Uwaga: Wykryto wirusa w poczcie/ DISCARD Virus detection mail
+/^Subject: Uwaga wirus w wiadomosci od / DISCARD Virus detection mail
+/^Subject: Uwaga: prawdopodobny wirus lub robak/ DISCARD Virus detection mail
+/^Subject: Mail rejected: A Virus was detected in the message/ DISCARD Virus detection mail
+/^Subject: NAV a détecté un virus dans un document dont vous êtes l'auteur./ DISCARD Virus detection mail
+/^Subject: Mail rejected: A Virus was detected in the message./ DISCARD Virus detection mail
+/^Subject: Returned due to virus:/ DISCARD Virus detection mail
+/^Subject: VIRUS in Ihrer Mail an .* - VIRUS in your mail to/ DISCARD Virus detection mail
+/^	name="Norton AntiVirus Deleted1\.txt"/ DISCARD Virus detection mail
+/^	filename="DELETED0.TXT"/ DISCARD Virus detection mail
+/^Subject: MailMonitor for Exchange has processed a suspicious mail/ DISCARD Virus detection mail
+/^Subject: .* Virenchecker Information/ DISCARD Virus detection mail
+/^Subject: Returned due to Virus!!! Read the attachment for detail/ DISCARD Virus detection mail
+/^Subject: Mahdollinen virushuomautus!/ DISCARD Virus detection mail
+/^Subject: The .* antivirus system found VIRUS= / DISCARD Virus detection mail
+/^Subject: E-mail not delivered -- content violation/ DISCARD Virus detection mail
+/^Subject: Virus found! Spam/ DISCARD Virus detection mail
+/^Subject: - Message infecté \/ Infected E-mail - Sujet \/ Subject :/ DISCARD Virus detection mail
+/^Subject: \*\*\* You have sent a virus !/ DISCARD Virus detection mail
+/^Subject: ScanMail Message: To Sender, action taken by attachment blocking/ DISCARD Virus detection mail
+/^Subject: Virus intercepted/ DISCARD Virus detection mail
+/^Subject: Wyniki skanowania systemu antywirusowego/ DISCARD Virus detection mail
+/^Subject: File blocked - ScanMail for Lotus Notes -->/ DISCARD Virus detection mail
+/^Subject: Virus found in message to you!/ DISCARD Virus detection mail
+/^Subject: VIRUS IN YOUR MAIL / DISCARD Virus detection mail
+/^Subject: VIRUS VE VASI ZPRAVE pro/ DISCARD Virus detection mail
+/^Subject: Symantec AntiVirus detected a virus in a document you authored/ DISCARD Virus detection mail
+/^Subject: EDP SONDRIO detected a virus in a message you sent.  The infected attachment was deleted./ DISCARD Virus detection mail
+/^Subject: \[MailServer Notification\]To Sender file blocking settings matched and action was taken./ DISCARD Virus detection mail
+/^Subject: TFS Virus Alert: Re:/ DISCARD Virus detection mail
+/^Subject: returned due to virus or too large or too many attachment\(s\)Re: / DISCARD Virus detection mail
+/^Subject: ATTENTION: A message you sent was found to contain a VIRUS and has been deleted./ DISCARD Virus detection mail
+/^Subject: *. Suppression du Virus: Mail Delivery / DISCARD Virus detection mail
+/^Subject: The Eastman Kodak Anti-virus software deleted the infected attachment/ DISCARD Virus detection mail
+/^Subject: LA POSTA CHE INVII E' INFETTA DA VIRUS/ DISCARD Virus detection mail
+/^Subject: Atención : Virus de e-mail detectado/ DISCARD Virus detection mail
+/^Subject: BENACHRICHTIGUNG ZUR MAIL ZUSTELLUNG/ DISCARD Virus detection mail
+/^Subject: ALERT: Message from .* was purged; Detected worm: / DISCARD Virus detection mail
+/^Subject: Virus gefunden in Nachricht / DISCARD Virus detection mail
+/^Subject: Rejected Message from SONACA Policy/ DISCARD Virus detection mail
+/^Subject: Filtering - ESC Filtering System detected a violation in a document you authored./ DISCARD Virus detection mail
+/^Subject: Your sent mail had a virus!/ DISCARD Virus detection mail
+/^Subject: Symantec Mail Security detected that you sent a message containing prohibited content/ DISCARD Virus detection mail
+/^Subject: .* CONTAINS A VIRUS\.\.\./ DISCARD Virus detection mail
+/^Subject: Attachments not Delivered by MailScan!/ DISCARD Virus detection mail
+/^Subject: Virus détecté dans le message "/ DISCARD Virus detection mail
+/^Subject: \[Sophos znalazl wirusa. Virus detected\]/ DISCARD Virus detection mail
+/^Subject: Wirus w poczcie od Ciebie/ DISCARD Virus detection mail
+/^Subject: Az Ön által küldött levélben vírus volt, mely ki lett törölve./ DISCARD Virus detection mail
+/^Subject: DDAntivirusSystem  - Detected a virus in a message addressed to you./ DISCARD Virus detection mail
+/^Subject: Virus num mail enviado por si./ DISCARD Virus detection mail
+/^Subject: \<WatchDog\/M: Virus or error detected/ DISCARD Virus detection mail
+/^Subject: virus trouve dans le message envoye / DISCARD Virus detection mail
+/^Subject: Your message was filtered/ DISCARD Virus detection mail
+/^Subject: .* \*\*\* VIRUS ALERT \*\*\* / DISCARD Virus detection mail
+/^Subject: Attachment removed/ DISCARD Virus detection mail
+/^Subject: WIRUS W TWOJEJE POCZCIE/ DISCARD Virus detection mail
+/^Subject: Virus Warning/ DISCARD Virus detection mail
+/^Subject: ScanMail Message: To Sender, virus found and action taken./ DISCARD Virus detection mail
+/^Subject: Virus found in message from you/ DISCARD Virus detection mail
+/^Subject: Virus no seu email / DISCARD Virus detection mail
+/^Subject: Illegal attachment type encontrado em mensagem enviada "/ DISCARD Virus detection mail
+/^Subject: Piece jointe supprimee \(Replaced with text\)/ DISCARD Virus detection mail
+/^Subject: ALERTE: pièces jointes suspectes/ DISCARD Virus detection mail
+/^Subject: Seu\/your email tinha\/have virus/ DISCARD Virus detection mail
+/^Subject: Network Associates Webshield -  e-mail Content Alert/ DISCARD Virus detection mail
+/^Subject: W Twojej wiadomosci znaleziono wirusa! \/ Virus found in your message!/ DISCARD Virus detection mail
+/^Subject: \[MailServer Notification\]To Sender virus found and action taken\./ DISCARD Virus detection mail
+/^	filename="VIRUS_DETECTED_AND_REMOVED_/ DISCARD Virus detection mail
+
+# t29.dk postfix header_checks regexp file, rev. 8 (2004-02-07)
+# conversion by Niels Callesøe (dk pfy) pfy@nntp.dk
+# usage (main.cf):
+# header_checks = regexp:/etc/postfix/header_checks
+#
+# original compilation by Tim Jackson for SpamAssassin
+# http://www.timj.co.uk/linux/bogus-virus-warnings.cf
+#
+# conversion for procmail by Peter Jensen can be found at
+# http://pekaje.homeip.net/antiantivirus_procmail.txt
+#
+# t29.dk wrote:
+# Note: Some people have suggested using DISCARD rather than REJECT. This is a bad idea.
+# REJECT'ing these will not bounce to an innocent user, unless the antivirus program
+# forges the return address. Most antivirus programs insert their own, and so the only
+# one who will see the bounce is the admin who needs to fix his broken AV software.
+# In the event of a false positive, REJECT'ing will make sure the sender knows about it.
+#
+# However most virus programs today forge their sender addres, so the reasoning
+# above is bogus an we use DISCARD instead.
+
+/^Subject: \{Virus\?\}/                                                 DISCARD Bogus antivirus warning (1)
+/^Subject: Virus Detected by Network Associates, Inc\. Webshield/       DISCARD Bogus antivirus warning (2)
+/^Subject: ---- Virus Detected ----$/                                   DISCARD Bogus antivirus warning (3)
+/^Subject: Virus detected$/                                             DISCARD Bogus antivirus warning (4)
+/^Subject: Virus Alert$/                                                DISCARD Bogus antivirus warning (5)
+/^Subject: InterScan NT Alert$/                                         DISCARD Bogus antivirus warning (6)
+/^Subject: Virus found in the message$/                                 DISCARD Bogus antivirus warning (7)
+/^Subject: Message quarantined$/                                        DISCARD Bogus antivirus warning (8)
+/^Subject: VIRUS ALERT!/                                                DISCARD Bogus antivirus warning (9)
+/^Subject: Virus found in e-mail \(/                                    DISCARD Bogus antivirus warning (10)
+/^Subject: MDaemon Warning - Virus Found/                               DISCARD Bogus antivirus warning (11)
+/^Subject: Warning: E-mail viruses detected$/                           DISCARD Bogus antivirus warning (12)
+/^Subject: ScanMail Message: To Sender virus found/                     DISCARD Bogus antivirus warning (13)
+/^Subject: Norton Anti ?Virus detected/                                 DISCARD Bogus antivirus warning (14)
+/^Subject: VIRUS .*IN YOUR MAIL$/                                       DISCARD Bogus antivirus warning (15)
+/^Subject: Antigen found VIRUS/                                         DISCARD Bogus antivirus warning (16)
+/^Subject: Filter incident$/                                            DISCARD Bogus antivirus warning (17)
+/^Subject: Vírus figyelmeztetés! Virus warning!$/                       DISCARD Bogus antivirus warning (18)
+/^Subject: Symantec AVF detected/                                       DISCARD Bogus antivirus warning (19)
+/^Subject: Returned due to virus;/                                      DISCARD Bogus antivirus warning (20)
+/^Subject: Anti-Virus Notification/                                     DISCARD Bogus antivirus warning (21)
+/^Subject: BANNED FILENAME .*IN MAIL FROM YOU/                          DISCARD Bogus antivirus warning (22)
+/^Subject: File blocked - ScanMail for Lotus/                           DISCARD Bogus antivirus warning (23)
+/^Subject: NAV detected a virus/                                        DISCARD Bogus antivirus warning (24)
+# broader expression below
+# /^Subject: RAV AntiVirus scan/                                        DISCARD Bogus antivirus warning (25)
+/^Subject: VIRUS .+ IN MAIL FROM YOU/                                   DISCARD Bogus antivirus warning (26)
+/^Subject: Virus Notification:/                                         DISCARD Bogus antivirus warning (27)
+/^Subject: Virus found in a message you sent/                           DISCARD Bogus antivirus warning (28)
+/^Subject: Virus found in sent message/                                 DISCARD Bogus antivirus warning (29)
+/^Subject: VIRUS EN SU CORREO/                                          DISCARD Bogus antivirus warning (30)
+/^Subject: Warning: antivirus system report$/                           DISCARD Bogus antivirus warning (31)
+/^Subject: MDaemon Notification -- Attachment Removed$/                 DISCARD Bogus antivirus warning (32)
+/^Subject: Information - Antivirus$/                                    DISCARD Bogus antivirus warning (33)
+/^Subject: Symantec AntiVirus detected a violation/                     DISCARD Bogus antivirus warning (34)
+/^Subject: WARNING: YOU WERE SENT A VIRUS/                              DISCARD Bogus antivirus warning (35)
+/^Subject: SAV detected a violation in a document/                      DISCARD Bogus antivirus warning (36)
+/^Subject: MailMarshal has detected a suspect attachment/               DISCARD Bogus antivirus warning (37)
+/^Subject: A virus was detected in your mail/                           DISCARD Bogus antivirus warning (38)
+/^Subject: Recipient Virus-alert/                                       DISCARD Bogus antivirus warning (39)
+/^Subject: Virus Found in message/                                      DISCARD Bogus antivirus warning (40)
+/^Subject: E-?mail viruses detected/                                    DISCARD Bogus antivirus warning (41)
+/^Subject: Undelivered mail: VIRUS FOUND/                               DISCARD Bogus antivirus warning (42)
+/^Subject: Quarantined Mail: virus from/                                DISCARD Bogus antivirus warning (43)
+/^Subject: Attenzione Virus/                                            DISCARD Bogus antivirus warning (44)
+/^Subject: \[MailServer Notification\]To Sender virus found/            DISCARD Bogus antivirus warning (45)
+/^Subject: virus in verschickter Nachricht gefunden/                    DISCARD Bogus antivirus warning (46)
+/^Subject: MailMarshal has detected a Virus in your message/            DISCARD Bogus antivirus warning (47)
+/^Subject: Virus encontrado en el mensaje enviado/                      DISCARD Bogus antivirus warning (48)
+/^Subject: Security Alert - ScanMail for Lotus Notes/                   DISCARD Bogus antivirus warning (49)
+/^Subject: Virus Infection Alert/                                       DISCARD Bogus antivirus warning (50)
+/^Subject: Warning - Virus Detected:/                                   DISCARD Bogus antivirus warning (51)
+/^Subject: Skynet Mail Protection scan results/                         DISCARD Bogus antivirus warning (52)
+/^X-BLTSYMAVREINSERT/                                                   DISCARD Bogus antivirus warning (53)
+/^X-Virus-Scan-Result: Repaired/                                        DISCARD Bogus antivirus warning (54)
+/^X-.*-MailScanner: Found to be infected/                               DISCARD Bogus antivirus warning (55)
+/^X-Scanned: Symantec Antivirus Scan - Virus found/                     DISCARD Bogus antivirus warning (56)
+/^X-Sender: NetMail AntiVirus Agent/                                    DISCARD Bogus antivirus warning (57)
+/^X-Auto-Generated: Sophos antivirus plugin/                            DISCARD Bogus antivirus warning (58)
+# Contributed by "Safari" in n.a.n-a.e
+/^Subject: Virusveszely! Virus warning!/                                DISCARD Bogus antivirus warning (59)
+/^Subject: Virus in mail from you\./                                    DISCARD Bogus antivirus warning (60)
+/^Subject: Virus infection notice/                                      DISCARD Bogus antivirus warning (61)
+/^Subject: Possible virus found in message you sent/                    DISCARD Bogus antivirus warning (62)
+/^Subject: AntiVir ALERT/                                               DISCARD Bogus antivirus warning (63)
+/^Subject: Centrale Anti-Virus melding/                                 DISCARD Bogus antivirus warning (64)
+/^Subject: Vexira ALERT/                                                DISCARD Bogus antivirus warning (65)
+/^X-ELTE-VirusStatus: was_infected/                                     DISCARD Bogus antivirus warning (66)
+# contributed by B Briggs in n.a.n-a.e
+/^Subject: You sent potentially unsafe content/                         DISCARD Bogus antivirus warning (67)
+# contributed by Lars Stokholm in d.a.n
+/^Subject: Hov, du har sendt Jubii en virus !!!$/                       DISCARD Bogus antivirus warning (68)
+# contributed by my inbox
+/^Subject: \[message from .*virus detect system\]$/                     DISCARD Bogus antivirus warning (69)
+/^Subject: Net Integrator Virus Alert$/                                 DISCARD Bogus antivirus warning (70)
+/^Subject: Information - Antivirus$/                                    DISCARD Bogus antivirus warning (71)
+/^Subject: AntiVirus Alert!$/                                           DISCARD Bogus antivirus warning (72)
+/^Subject: \{ALERTA DE VIRUS\}/                                         DISCARD Bogus antivirus warning (73)
+/^Subject: Virus in una mail per lei/                                   DISCARD Bogus antivirus warning (74)
+/^Subject: .*AntiVirus scan results/                                    DISCARD Bogus antivirus warning (75)
+# found in http://www.wsrcc.com/spam/
+/^X-Mailer: ravmd\//                                                    DISCARD Bogus antivirus warning (76)
+# indirectly contributed by Paul Vixie on NANOG
+/^Subject:.*ALERTE \- Vous avez envoye un mail avec virus/              DISCARD Bogus antivirus warning (77)
+/^Subject:.*ALERTE\: un virus a /                                       DISCARD Bogus antivirus warning (78)
+/^Subject:.*ALERT\! Virus found in your mail/                           DISCARD Bogus antivirus warning (79)
+/^Subject:.*Anti-Virus Notification/                                    DISCARD Bogus antivirus warning (80)
+/^Subject:.*Antigen Notification/                                       DISCARD Bogus antivirus warning (81)
+/^Subject:.*Antigen found VIRUS/                                        DISCARD Bogus antivirus warning (82)
+/^Subject:.*Antivirus stopped your message/                             DISCARD Bogus antivirus warning (83)
+/^Subject:.*Email Quarantined Due to Virus/                             DISCARD Bogus antivirus warning (84)
+/^Subject:.*Failed to clean virus file/                                 DISCARD Bogus antivirus warning (85)
+/^Subject:.*Inflex scan report \[\d+\]/                                 DISCARD Bogus antivirus warning (86)
+/^Subject:.*InterScan NT Alert/                                         DISCARD Bogus antivirus warning (87)
+/^Subject:.*MMS Notification/                                           DISCARD Bogus antivirus warning (88)
+/^Subject:.*MailSure Virus Alert/                                       DISCARD Bogus antivirus warning (89)
+/^Subject:.*Ochrona antywirusowa/                                       DISCARD Bogus antivirus warning (90)
+/^Subject:.*\! Virus Notify \!/                                         DISCARD Bogus antivirus warning (91)
+/^Subject:.*SAV detected a violation in a /                             DISCARD Bogus antivirus warning (92)
+/^Subject:.*VIRUS NO SEU EMAIL/                                         DISCARD Bogus antivirus warning (93)
+/^Subject:.*Virus Check Alert/                                          DISCARD Bogus antivirus warning (94)
+/^Subject:.*Virus Notification from Redstone/                           DISCARD Bogus antivirus warning (95)
+/^Subject:.*Virus Quarantine Notification/                              DISCARD Bogus antivirus warning (96)
+/^Subject:.*Virus in Ihrer Nachricht/                                   DISCARD Bogus antivirus warning (97)
+/^Subject:.*Votre message contient un virus/                            DISCARD Bogus antivirus warning (98)
+/^Subject:.*Warning\: E-mail viruses detected/                          DISCARD Bogus antivirus warning (99)
+/^Subject:.*WorldSecure Server notification/                            DISCARD Bogus antivirus warning (100)
+/^Subject:.*\[SmartFilter\] Virus Alert /                               DISCARD Bogus antivirus warning (101)
+/^Subject:.*\[Virus detected\]/                                         DISCARD Bogus antivirus warning (102)
+/^Subject:.*virus trouve dans le message envoye/                        DISCARD Bogus antivirus warning (103)
+/^Subject:.*virus trovato in un messaggio inviato /                     DISCARD Bogus antivirus warning (104)
+
+/^Subject: EMAIL-ABSENDER ACHTUNG! VIRUS in versendeter Email gefunden!/ DISCARD Virus detection mail
+/^Subject: tipo de arquivo anexo proibido encontrado em mensagem enviada / DISCARD Virus detection mail
+/^Subject: In einer E-Mail wurde ein Virus gefunden / A virus was detected in/ DISCARD Virus detection mail
+/^Subject: A mail you send contained a virus/ DISCARD Virus detection mail
+/^Subject: Violazione di contenuto/ DISCARD Virus detection mail
+/^Subject: WARNING. You tried to send a potential virus or unauthorised code / DISCARD Virus detection mail
+/^Subject: Violacao de Conteudo/ DISCARD Virus detection mail
+/^Subject: Mail with blocked attachmenttype found in Mail with subject / DISCARD Virus detection mail
+/^Subject: Virus found in a message you sent/ DISCARD Virus detection mail
+/^Subject: ! PELIGRO ! - Virus encontrado en el correo / ! WARNING ! - Virus/ DISCARD Virus detection mail
