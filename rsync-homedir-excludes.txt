@@ -365,3 +365,8 @@ nohup.out
 
 # ZeroNet
 ZeroBundle/ZeroNet/data
+
+# Misc directories
+k0nsl-vault
+k0nsl-new-vault
+.googledrive
