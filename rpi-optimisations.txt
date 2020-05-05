@@ -1,0 +1,11 @@
+# These values are usually edited in files stored  in "/boot/firmware" in "config.txt" or "usercfg.txt".
+# Please be careful and apply accordingly -- always read the available documentation, if extant.
+# PREAMBLE/CAUTION: you may need to add active cooling; depending on how much you overclock and how much voltage you apply to the board.
+
+arm_freq=1400
+core_freq=600
+over_voltage=4
+gpu_mem=16 # we do not need GPU mem allocated for desktop-related, as I run it barebones.
+disable_splash=1
+force_turbo=1 # disabled by default and may void your warranty
+boot_delay=1 # supposedly minimized SD card corruption when force_turbo is enforced
